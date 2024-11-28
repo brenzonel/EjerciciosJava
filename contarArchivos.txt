@@ -1,0 +1,15 @@
+#Enlistar archivos/carpetas
+ls | cat -> enlista los archivos y/o carpetas en saltos de linea
+ls -1 -> enlista los archivos y/o carpetas por linea
+ls -1 | cw -l -> enumera los archivos/carpetas por saltos de linea
+
+#Si existe un archivo/carpeta con los caracteres "\n" como foo\nbajo
+#se enlistara y contaran los archivos como
+#foo
+#bajo
+#Asi que esta es una opcion
+a=(*)
+echo "${#a[@]}"
+#Enlistara todos los archivos/carpetas que se capturaron en la matriz a
+
+#Si se quiere contar archivos ocultos se usaria la matriz a=(* .*)
