@@ -7,7 +7,7 @@ class primeNot{
         int n = Integer.parseInt(args[0]);
         int i = 2;
         boolean prime = true;
-        /*
+        /* //otra forma de hacerlo
         if (args.length == 0) {
             System.out.println("Please provide a number as an argument.");
             return;
